@@ -23,7 +23,7 @@ public class OneOfEachStats {
             boolean boy= false;
             sum=0;
 		    while ((!boy)||(!girl)) {
-			   int n= (int) (generator.nextDouble()*2);          
+			   int n= (int) (generator.nextDouble());          
 			   if (n<=0.5) {
 				boy=true;
 				
@@ -35,7 +35,6 @@ public class OneOfEachStats {
 			}
 			if (sum==2) {
 				c2++;
-
 				count+=sum;
 			}
 			if (sum==3) {
@@ -45,8 +44,6 @@ public class OneOfEachStats {
 			if (sum>=4) {
 				c4++;
 				count+=sum;
-
-
 			}	
 			
 		}
@@ -64,6 +61,8 @@ public class OneOfEachStats {
 		}else {
 			System.out.println("The most common number of children is 4 or more.");
 		}
-		    
+		 
+	
+
 	}
 }
