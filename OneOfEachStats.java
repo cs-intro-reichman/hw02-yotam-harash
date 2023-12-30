@@ -12,9 +12,7 @@ public class OneOfEachStats {
 		// Gets the two command-line arguments
 		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
-		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
-		
 		int c2=0;
 		int c3=0;
 		int c4=0;
@@ -37,14 +35,20 @@ public class OneOfEachStats {
 			}
 			if (sum==2) {
 				c2++;
+
+				count+=sum;
 			}
 			if (sum==3) {
 				c3++;
+				count+=sum;
 			}
 			if (sum>=4) {
 				c4++;
+				count=count+4;
+
+
 			}	
-			count+=sum;
+			
 		}
 		double avg = count/T;
 		System.out.println("Average: " + avg + " children to get at least one of each gender.");
