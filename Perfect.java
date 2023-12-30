@@ -8,14 +8,15 @@ public class Perfect {
 		String out= x + " is a perfect number since " + x + " = 1 ";
 		int sum=0;
 		for (int i = 1; i <= x; i++) {
-			if (x % i == 0) {
+			
+			if (x%i==0&&(i==x/2)) {
+				sum=sum+i;
+				out=out + i;
+			}else if (x % i == 0) {
 				sum=sum+i;
 				out=out + i +" + "; 
 			}
-			if (x%i==0&&(i<=x/2)) {
-				sum=sum+i;
-				out=out + i;
-			}
+			
 		}
 		if (sum==x) {
 			System.out.println(out);

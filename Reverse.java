@@ -11,14 +11,14 @@ public class Reverse {
 		String a= args[0];
 		char middle =' ';
 		if (a.length()%2==0) {
-			middle=a.charAt(a.length()/2);
+			middle=a.charAt((a.length()/2)-1);
 			for (int i = a.length()-1; i < 0; i--)
 			{
 				Reverse=Reverse+a.charAt(i);
 
 			}
 		}else{
-			middle=a.charAt((a.length())-1/2);
+			middle=a.charAt(((a.length())-1)/2);
 			for (int i = a.length()-1; i < 0; i--)
 			{
 				Reverse=Reverse+a.charAt(i);
