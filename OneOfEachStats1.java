@@ -17,9 +17,9 @@ public class OneOfEachStats1 {
             boolean boy= false;
             sum=0;
 		    while ((!boy)||(!girl)) {
-			   double n= (Math.random());
+			   int n= (int) (Math.random()*2);
                sum++;
-			   if (n<=0.5) {
+			   if (n==0) {
 				boy=true;
 				
 			    }else{
