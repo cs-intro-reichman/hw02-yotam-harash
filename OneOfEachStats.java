@@ -23,7 +23,7 @@ public class OneOfEachStats {
             boolean boy= false;
             sum=0;
 		    while ((!boy)||(!girl)) {
-			   int n= (int) (generator.nextDouble());          
+			   double n= (int) (generator.nextDouble());          
 			   if (n<=0.5) {
 				boy=true;
 				
