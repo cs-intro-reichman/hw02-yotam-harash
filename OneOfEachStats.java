@@ -44,7 +44,7 @@ public class OneOfEachStats {
 			}
 			if (sum>=4) {
 				c4++;
-				count=count+4;
+				count+=sum;
 
 
 			}	
