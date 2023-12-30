@@ -23,15 +23,14 @@ public class OneOfEachStats {
             boolean boy= false;
             sum=0;
 		    while ((!boy)||(!girl)) {
-			   int n= (int) (generator.nextDouble()*2);          
-			   if (n==0) {
+			   double n= (generator.nextDouble()); 
+			   sum++;         
+			   if (n<=0) {
 				boy=true;
-				
 			    }else{
 				girl=true;
-				
 			    }
-				sum++;
+				
 			}
 			if (sum==2) {
 				c2++;
@@ -51,10 +50,9 @@ public class OneOfEachStats {
 		System.out.println("Average: " + avg + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + c2);
 		System.out.println("Number of families with 3 children: " + c3);
-		System.out.println("Number of families with or more children: " + c4);
+		System.out.println("Number of families with 4 or more children: " + c4);
 		int max= Math.max(Math.max(c4, c3), c2);
 		if (max==c2){
-
 			System.out.println("The most common number of children is 2.");
 		}else if (max==c3) {
 			System.out.println("The most common number of children is 3.");
